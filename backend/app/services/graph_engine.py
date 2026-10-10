@@ -51,13 +51,20 @@ logger = logging.getLogger("quantum_veil.graph_engine")
 # --------------------------------------------------------------------------- #
 
 # Node types supported by the platform.
-NODE_TYPES = {"Person", "Phone", "BankAccount", "Company"}
+# Node types supported by the platform
+NODE_TYPES = {
+    "Person", "Phone", "BankAccount", "Company", "CryptoWallet", "CryptoTransaction",
+    "SocialHandle", "IPAddress", "Email", "UPI", "Domain", "TransitLog",
+    "RecruitmentAgency", "ServerLogIndicator", "CredentialIndicator", "Report",
+}
 
-# Relation names used on edges.
+# Relation names used on edges
 REL_CALLED = "CALLED"
 REL_TRANSFERRED = "TRANSFERRED"
 REL_DIRECTOR_OF = "DIRECTOR_OF"
 REL_OWNS = "OWNS"
+REL_LOGGED_IN = "LOGGED_IN_FROM"  # For IP Addresses
+REL_MESSAGED = "MESSAGED"        # For Social Handles
 
 # Source labels (provenance of each node/edge).
 SRC_OFFLINE = "offline"
@@ -278,7 +285,7 @@ def _transfer_stats(G: nx.DiGraph) -> pd.DataFrame:
     """
     rows = []
     for node, data in G.nodes(data=True):
-        if data.get("type") != "BankAccount":
+        if data.get("type") not in ("BankAccount", "CryptoWallet"):
             continue
         in_edges = [(u, d) for u, _, d in G.in_edges(node, data=True)
                     if REL_TRANSFERRED in d.get("relations", [d.get("relation")])]
