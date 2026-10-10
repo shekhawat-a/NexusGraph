@@ -1,0 +1,14 @@
+txn_id,timestamp,from_account,from_name,from_bank,to_account,to_name,to_bank,amount_inr,channel,utr_ref,remarks,from_balance_after_inr,to_balance_after_inr
+T011,2026-09-02 18:10:00,778200314456,Pradeep Naik,Anvay Small Finance Bank,888100300415,Shree Balaji Traders,Nirmal Bank,170000,IMPS,UTR2609021810011,Inv 4471 settlement,100000,170000
+T013,2026-09-02 19:30:00,520900663128,Gaurav Bisht,Tarang Payments Bank,888100300415,Shree Balaji Traders,Nirmal Bank,150000,IMPS,UTR2609021930013,Inv 4473 settlement,66500,320000
+T012,2026-09-03 08:55:00,778200314456,Pradeep Naik,Anvay Small Finance Bank,888100300415,Shree Balaji Traders,Nirmal Bank,80000,IMPS,UTR2609030855012,Inv 4472 settlement,20000,400000
+T014,2026-09-03 09:20:00,520900663128,Gaurav Bisht,Tarang Payments Bank,888200300526,Om Digital Enterprises,Sagar Co-op Bank,60000,UPI,UTR2609030920014,Service charges,6500,60000
+T020,2026-09-03 14:30:00,888100300415,Shree Balaji Traders,Nirmal Bank,999100200018,Neelkanth Trading Co.,Nirmal Bank,360000,NEFT,UTR2609031430020,Trade settlement,40000,360000
+T015,2026-09-10 12:00:00,611800229047,Anil Rawat,Sagar Co-op Bank,888200300526,Om Digital Enterprises,Sagar Co-op Bank,90000,IMPS,UTR2609101200015,Service charges,17000,150000
+T016,2026-09-11 08:40:00,733400581902,Sandeep Tomar,Mahi Gramin Bank,888200300526,Om Digital Enterprises,Sagar Co-op Bank,80000,IMPS,UTR2609110840016,Service charges,5000,230000
+T021,2026-09-11 15:10:00,888200300526,Om Digital Enterprises,Sagar Co-op Bank,999100200018,Neelkanth Trading Co.,Nirmal Bank,212000,NEFT,UTR2609111510021,Trade settlement,18000,572000
+T017,2026-09-16 10:05:00,420600917735,Kishore Patil,Kaveri Bank,888300300637,Lakshya Consultancy Services,Kaveri Bank,200000,IMPS,UTR2609161005017,Consulting fee,225000,200000
+T018,2026-09-16 10:50:00,420600917735,Kishore Patil,Kaveri Bank,888300300637,Lakshya Consultancy Services,Kaveri Bank,192000,IMPS,UTR2609161050018,Consulting fee,33000,392000
+T019,2026-09-17 09:15:00,774100846021,Ravi Chavan,Anvay Small Finance Bank,888300300637,Lakshya Consultancy Services,Kaveri Bank,275000,NEFT,UTR2609170915019,Consulting fee,25000,667000
+T022,2026-09-17 13:25:00,888300300637,Lakshya Consultancy Services,Kaveri Bank,999100200018,Neelkanth Trading Co.,Nirmal Bank,640000,NEFT,UTR2609171325022,Trade settlement,27000,1212000
+T023,2026-09-18 11:45:00,999100200018,Neelkanth Trading Co.,Nirmal Bank,555000123456,CoinBazaar Demo Exchange (Omnibus),Tarang Payments Bank,500000,NEFT,UTR2609181145023,Crypto off-ramp (external sink),712000,500000
