@@ -1,0 +1,11 @@
+# PEP 561 marker file.
+#
+# This empty file tells type checkers (mypy, Pylance/pyright) that this package
+# ships its own type information and should NOT be treated as untyped.
+#
+# Without this file, tools like Pylance will ignore the package's annotations even
+# though they exist in the source — meaning users get zero autocomplete or type
+# errors when they install the SDK. Every typed dependency we rely on (httpx,
+# pydantic, tenacity) includes this file for the same reason.
+#
+# Reference: https://peps.python.org/pep-0561/
