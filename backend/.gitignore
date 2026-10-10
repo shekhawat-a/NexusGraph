@@ -1,0 +1,29 @@
+# =========================================
+# NexusGraph Backend .gitignore
+# =========================================
+
+# 1. Environment Variables (CRITICAL: Never commit API Keys)
+.env
+.env.*
+
+# 2. Virtual Environments
+venv/
+env/
+.venv/
+
+# 3. Python Cache & Compiled Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 4. Data & Uploads (Optional: Uncomment if you don't want to push generated CSV/PDFs to GitHub)
+# data/
+# *.csv
+# *.txt
+
+# 5. IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+*.log
